@@ -172,6 +172,7 @@ namespace hundred {
     //% thisSpeed.fieldOptions.maxRows=4
     //% help=github:docs/set_ani
     export function setAni(thisAn:Image[], thisSpeed:hundred.Durs) {
+        hundred.addThing(thisAn[0])
         animation.runImageAnimation(
             hundred.projectile,
             thisAn,
