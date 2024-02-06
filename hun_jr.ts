@@ -113,6 +113,7 @@ namespace hundred {
     //% blockId=set_scene
     //% block="scene $thisScene"
     //% thisScene.shadow=screen_image_picker
+    //% thisScene.defl=hundred_imgs.planet
     //% help=github:docs/set_scene
     export function setScene(thisScene: Image) {
         scene.setBackgroundImage(thisScene)
@@ -125,6 +126,7 @@ namespace hundred {
     //% blockId=add_thing
     //% block="add $thisImg"
     //% thisImg.shadow=screen_image_picker
+    //% thisImg.defl=hundred_imgs.alien
     //% help=github:docs/add_thing
     export function addThing(thisImg: Image) {
         hundred.projectile = sprites.createProjectileFromSide(thisImg, -90, 0)
@@ -165,6 +167,7 @@ namespace hundred {
     //% color=#058954
     //% block="$thisAn $thisSpeed"
     //% thisAn.shadow=animation_editor
+    //% thisAn.defl=hundred_imgs.animated_alien
     //% thisSpeed.defl=hundred.Durs.Fast
     //% thisSpeed.fieldEditor="imagedropdown"
     //% thisSpeed.fieldOptions.columns="1"
@@ -200,6 +203,7 @@ namespace hundred {
     //% color=#fb7aa0
     //% block="scroll $thisImg $thisWay"
     //% thisImg.shadow=screen_image_picker
+    //% thisImg.defl=hundred_imgs.planet
     //% thisWay.defl=left
     //% thisWay.fieldEditor="imagedropdown"
     //% thisWay.fieldOptions.columns="1"
